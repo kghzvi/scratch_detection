@@ -1,13 +1,14 @@
 
 import cv2
 
-image_path = 'H:/Eigene Dateien/Bildverarbeitung/scratch_detection/temp/1'
-label_path = 'H:/Eigene Dateien/Bildverarbeitung/scratch_detection/temp/1'
+image_path = 'H:/Eigene Dateien/Bildverarbeitung/scratch_detection/data/obj/000000000069'
+label_path = image_path
+#label_path = 'H:/Eigene Dateien/Bildverarbeitung/scratch_detection/temp/1'
 
-image = cv2.imread(image_path + '.bmp')
+image = cv2.imread(image_path + '.jpg')
 
-class_list = ['triangle']
-colors = [(0, 255, 0), (0, 255, 255)]
+class_list = ['solid','dash','dot']
+colors = [(0, 255, 0), (0, 255, 255),(255, 255, 0)]
 
 height, width, _ = image.shape
 
