@@ -3,7 +3,7 @@ import os, shutil, random
 # preparing the folder structure
 
 full_data_path = 'data/obj/'
-extension_allowed = '.bmp'
+extension_allowed = '.jpg'
 split_percentage = 90
 
 images_path = 'data/images/'
